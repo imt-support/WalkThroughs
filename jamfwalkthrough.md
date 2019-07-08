@@ -9,9 +9,7 @@ Steps to take
 * Re-install operating System 
 * use enroll username and PXE Password on Enroll login
 * Log into Tech Support
-* Change ComputerName using `sudo scutil --set ComputerName "Name"`
-* Set HostName using `sudo scutil --set HostName "Name"`
-* Set LocalHostName using ` sudo scutil --set LocalHostName "Name"`
+* Change ComputerName using `sudo scutil --set ComputerName usernameMBP`
 * You can check that these changes have been maed using the following commands.
 
 ````
@@ -26,14 +24,20 @@ sudo scutil --get LocalHostName
 
 ###All Commands used
 ````
-sudo scutil --set ComputerName "Name"
-sudo scutil --set HostName "Name"
-sudo scutil --set LocalHostName "Name"
-sudo scutil --get Computer name 
+sudo scutil --set ComputerName usernameMBP
+sudo scutil --get ComputerName 
 sudo scutil --get HostName
 sudo scutil --get LocalHostName
 sudo jamf recon
 ````
+
+
+###Naming Conventions
+* MacBook Pro: usernameMBP
+* Mac Pro: usernameMP
+* iMac: usernameIM
+* MacMini: usernameMM
+* Loaners: Loaner0000 (Loaner + tag number without the -78)
 	
 
 
