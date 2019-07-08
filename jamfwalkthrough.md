@@ -14,9 +14,10 @@ Steps to take
 
 ````
 sudo scutil --get ComputerName
-sudo scutil --get HostName
 sudo scutil --get LocalHostName
+
 ````
+
 * Once this is done you will make sure to run the recon command to get the computer to check in with Jamf `sudo jamf recon`
 * This will trigger jamf to bind the computer to AD and download the manditory settings and applications.
 
@@ -26,7 +27,6 @@ sudo scutil --get LocalHostName
 ````
 sudo scutil --set ComputerName usernameMBP
 sudo scutil --get ComputerName 
-sudo scutil --get HostName
 sudo scutil --get LocalHostName
 sudo jamf recon
 ````
